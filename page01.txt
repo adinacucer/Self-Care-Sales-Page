@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care & Spiritual Awakening Course</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+        .container { width: 80%; margin: auto; text-align: center; padding: 50px 0; }
+        .hero { background: #8E44AD; color: white; padding: 60px 20px; }
+        .btn { background: #F39C12; color: white; padding: 15px 30px; border: none; font-size: 18px; cursor: pointer; margin-top: 20px; }
+        .btn:hover { background: #D68910; }
+        .section { padding: 40px 20px; }
+        .testimonials { background: #E8DAEF; padding: 40px; }
+        .footer { background: #8E44AD; color: white; padding: 20px; margin-top: 40px; }
+        .countdown { font-size: 20px; font-weight: bold; color: red; margin-top: 10px; }
+    </style>
+    <script>
+        function countdownTimer() {
+            const countdownDate = new Date().getTime() + (24 * 60 * 60 * 1000); 
+            const x = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s left!";
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "Offer expired!";
+                }
+            }, 1000);
+        }
+        window.onload = countdownTimer;
+    </script>
+</head>
+<body>
+    <div class="hero">
+        <h1>Unlock Your True Self: A Step-by-Step Self-Care & Spiritual Awakening Journey</h1>
+        <p>Transform your life with our proven system for stress relief, clarity, and personal growth.</p>
+        <button class="btn">Yes! I’m Ready to Transform My Life!</button>
+        <p id="countdown" class="countdown"></p>
+    </div>
+    
+    <div class="container">
+        <h2>Does This Sound Like You?</h2>
+        <p>✅ Feeling stuck, overwhelmed, or disconnected from yourself?</p>
+        <p>✅ Searching for a deeper sense of peace and clarity?</p>
+        <p>✅ Struggling to maintain a consistent self-care practice?</p>
+        <p><strong>If yes, this course is for you.</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>What You'll Get</h2>
+        <p>✔ 6-Week Step-by-Step Training</p>
+        <p>✔ Guided Meditations & Self-Care Exercises</p>
+        <p>✔ Lifetime Access + Community Support</p>
+        <p>✔ Exclusive Bonuses & Personal Growth Tools</p>
+        <button class="btn">Start Your Spiritual Awakening Today!</button>
+    </div>
+    
+    <div class="testimonials">
+        <h2>What Our Students Say</h2>
+        <p>💬 "This course completely changed my perspective on self-care!" – Sarah J.</p>
+        <p>💬 "I feel more aligned, peaceful, and energized than ever." – Mike R.</p>
+        <p>💬 "I never knew self-care could be this powerful. Highly recommend!" – Lisa T.</p>
+    </div>
+
+    <div class="section">
+        <h2>Limited-Time Offer</h2>
+        <p>Enroll before the timer runs out and get $100 OFF + a FREE 1-on-1 Clarity Session!</p>
+        <p id="countdown" class="countdown"></p>
+        <button class="btn">Claim Your Spot Now</button>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Self-Care & Awakening Academy. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

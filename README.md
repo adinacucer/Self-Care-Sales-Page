@@ -1,2 +1,2 @@
-Introduction to Spiritual Healing and Awakening
+Spiritual Healing and Awakening
 Welcome to Awaken & Heal: A Journey to Spiritual Renewal! 
